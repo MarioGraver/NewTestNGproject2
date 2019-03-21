@@ -1,6 +1,6 @@
 package facebookLogin;
 
-import org.testng.annotations.Test;
+import org.testng.annotations.Test ;
 import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
@@ -14,8 +14,8 @@ public class FacebookLogintest {
 	public ChromeDriver driver;
   @Test(priority = 1)
   public void testLogin() {
-	  driver.findElement(By.id("email")).sendKeys("9991809718");
-	  driver.findElement(By.id("pass")).sendKeys("@andy987");
+	  driver.findElement(By.id("email")).sendKeys("");
+	  driver.findElement(By.id("pass")).sendKeys("@OOandOOy987");
 	  driver.findElement(By.xpath("//*[@value='Iniciar sesión']")).click();
 	  
 	  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
